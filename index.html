@@ -246,7 +246,7 @@
 
     <div class="pio-container">
         <div class="pio-action"></div>
-        <canvas id="pio" width="400" height="500"></canvas>
+        <canvas id="pio" width="300" height="400"></canvas>
     </div>
     <link rel="stylesheet" href="css/pio.css">
     <script src="js/pio.js"></script>
@@ -288,7 +288,7 @@
 
         function resetTimer() {
             clearInterval(timer);
-            timer = setInterval(nextSlide, 2000); // 自动轮播时间间隔为2秒
+            timer = setInterval(nextSlide, 3000); // 自动轮播时间间隔为2秒
         }
 
         function pauseTimer() {
@@ -351,7 +351,7 @@
             currentComment = (currentComment + 1) % comments.length;
         }
 
-        setInterval(scrollComments, 1000); // 评论区轮播时间间隔为1秒
+        setInterval(scrollComments, 2000); // 评论区轮播时间间隔为1秒
     </script>
 </body>
 </html>
